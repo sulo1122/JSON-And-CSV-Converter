@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Orders JSON CSV Converter</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1> JSON And CSV Converter</h1>   
+
+        <p class="description">
+            Convert your json file into CSV and CSV back into JSON
+        </p>
+
+
+        
+
+        <div class="box">
+
+            <h2>JSON To CSV</h2>                   
+
+            <p class="info">
+                Select your orders.json file              
+            </p>
+
+            <input
+                type="file"
+                id="jsonFile"
+                accept=".json"
+            >
+
+            <button id="jsonButton">
+                Convert JSON to CSV
+            </button>
+
+            <label for="csvOutput">
+                CSV Output
+            </label>
+
+            <textarea
+                id="csvOutput"
+                placeholder="CSV data will appear here..."
+            ></textarea>
+
+            <button id="downloadCsv">          
+                Download CSV
+            </button>
+
+        </div>
+
+
+        
+
+        <div class="box">   
+
+            <h2>CSV To JSON</h2>
+
+            <p class="info">
+                Select your converted CSV file      
+            </p>   
+
+            <input
+                type="file"
+                id="csvFile"
+                accept=".csv"
+            >
+
+            <button id="csvButton">
+                Convert CSV to JSON
+            </button>
+
+            <label for="jsonOutput">                  
+                JSON Output
+            </label>
+
+            <textarea
+                id="jsonOutput"
+                placeholder="JSON data will appear here..."
+            ></textarea>
+
+            <button id="downloadJson">                   
+                Download JSON
+            </button>
+
+        </div>
+
+
+        
+
+        <div id="message"></div>
+
+    </div>
+
+
+    <script src="index.js"></script>
+
+</body>
+</html>
